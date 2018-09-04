@@ -10,3 +10,4 @@ while n > 0:
     n = int(input("Input a number:"))
     if n > max_int:
         max_int = n
+print(max_int)
