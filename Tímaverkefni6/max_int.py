@@ -7,7 +7,7 @@
 max_int = 0
 n = 1
 while n > 0:
-    n = int(input("Input a number:"))
+    n = int(input("Input a number: "))
     if n > max_int:
         max_int = n
-print(max_int)
+print("The maximum is", max_int)
