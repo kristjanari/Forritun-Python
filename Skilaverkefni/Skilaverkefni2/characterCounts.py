@@ -12,8 +12,8 @@ for stafur in setning:
         litlir_stafir += 1
     if stafur.isdigit():
         tölur +=1
-    #if stafur.ispunctuation():????????????????
-        #punktar +=1
+    if stafur.isalnum() == False and stafur.isspace() == False:
+        punktar +=1
 
 print(("{:>15}"+ "{:>5}").format("Upper case", str(storir_stafir)))
 print(("{:>15}"+ "{:>5}").format("Lower case", str(litlir_stafir)))

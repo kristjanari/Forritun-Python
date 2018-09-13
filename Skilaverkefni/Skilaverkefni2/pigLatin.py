@@ -5,7 +5,9 @@ byrjar_á_sérhljóða = False
 fyrsti_fundinn = False
 fyrsti_sérhljóði = 0
 while orð != ".":
-    orð = input("Ender a word: ")
+    orð = input("Enter a word: ")
+    if orð == ".":
+        break
     for stafur in sérhljóðar:
         if orð[0] == stafur:
             byrjar_á_sérhljóða = True
@@ -23,6 +25,7 @@ while orð != ".":
         fyrsti_fundinn = False
         orð = orð[fyrsti_sérhljóði:] + orð[:fyrsti_sérhljóði] + "ay"
         fyrsti_sérhljóði = 0
+    
     print(orð)
 
     
