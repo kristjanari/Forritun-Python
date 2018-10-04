@@ -1,0 +1,1 @@
+This program reads a file called 'test.txt'. You are required to write two functions that build a wordlist out of all of the words found in the file and print all of the unique words found in the file. Remove punctuations using 'string.punctuation' and 'strip()' before adding words to the wordlist.
